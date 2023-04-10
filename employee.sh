@@ -1,8 +1,11 @@
 echo "Welcome to employee computation program"
 isPartTime=1;
 isFullTime=2;
+workingDays=20
 empRatePerHr=20
-
+salary=0
+for((i=1;i<=20;i++))
+do
 randomCheck=$((RANDOM%3));
 
 case $randomCheck in
@@ -15,5 +18,5 @@ case $randomCheck in
 esac
 salary=$(($empHrs*$empRatePerHr))
 echo "salary=$salary"
-
+done
 
